@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../projects"
+		},
+		{
+			"path": "../../Javascript"
+		},
+		{
+			"path": "../../Tailwind css"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "M.S.T_University"
+	}
+}

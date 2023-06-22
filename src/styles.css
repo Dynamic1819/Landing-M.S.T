@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&display=swap');
+/* Form for Uploading Blogs */
+*{
+    user-select: none;
+}
+.form{
+    @apply bg-[#15172b] p-5 h-[500px];
+}
+.title{
+    @apply text-3xl font-bold font-sans text-gray-200 mt-4;
+}
+.input-container{
+    @apply relative h-12 mt-10;
+}
+.input{
+    @apply bg-[#303245] rounded border-none text-gray-200 text-lg pt-5 w-full;
+}
+
+.placeholder{
+    @apply absolute text-[#65657b] font-sans left-5 top-5 ;
+}
+.submit{
+    @apply h-28 text-gray-200 cursor-pointer text-xl justify-center mt-9;
+}
+.font-ibm{
+    font-family: 'IBM Plex Sans', 'sans';
+}
+
+
+
+/* University photo in Home Page */
+.Uni{
+    @apply pl-3 font-bold text-2xl;
+}
+
+/* buttons */
+.moreButton{
+    @apply bg-red-600 rounded transition ease-out duration-150 hover:scale-105;
+}
+.buttonText{
+    @apply p-2 md:p-4 text-[14px] md:text-lg text-gray-100;
+}
+
+
+
+/* Font sizes for pages */
+.Headtext{
+    @apply text-2xl sm:text-3xl font-bold;
+}
+.subHeadtext{
+    @apply text-xl sm:text-2xl font-bold;
+}
+
+/* Navigation for every pages */
+.lists{
+    @apply py-2 px-7 hover:text-secondary;
+}
+.xlists{
+    @apply py-2 px-7 hover:text-secondary text-center whitespace-nowrap;
+}
+.ddops{
+    @apply absolute right-[133px] translate-y-6 px-9 bg-white -translate-x-12 cursor-pointer border-x-4 border-b-4 rounded-b-md;
+}
+.ddops2{
+    @apply absolute right-[70px] translate-y-6 px-8 bg-white cursor-pointer border-x-4 border-b-4 rounded-b-md;
+}
+.ddops3{
+    @apply absolute translate-y-6 px-9 bg-white -translate-x-14 cursor-pointer border-x-4 border-b-4 rounded-b-md;
+}
+.ddops li,.ddops2 li,.ddops3 li{
+    @apply text-black hover:text-secondary;
+}
+
+/* Burger Menu */
+
+.smallMenu{
+    @apply absolute h-screen rounded-bl-xl bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center transition ease-out duration-200;
+}
+/* error page */
+
+/* .Navlist{
+    @apply sm:p-1 sm:m-1 lg:p-3 lg:m-3 rounded-xl hover:font-bold hover:bg-white hover:text-black hover:scale-105 transition ease-out duration-200;
+} */
+
+#centertext{
+    font-size: 3rem;
+    text-align: center;
+}
+.notActive{
+    @apply text-gray-500/60 shadow-none;
+}
+.drops{
+    @apply text-black transition duration-500 md:absolute top-full right-0 md:w-44 bg-gray-300 md:shadow-lg md:rounded-b;
+}
+.dropdowns{
+    @apply flex px-3 py-2 transition duration-300 ease-out justify-center font-normal hover:text-gray-200;
+}
+.parent:hover .child {
+    opacity:1;
+    height:auto;
+    overflow:none;
+}
+.child {
+    opacity:0;
+    height: 0;
+    overflow:hidden;
+    transform: translate(30%,0);
+}
+
+
+
+
+/* NCC and ITPEC in Home Page */
+.eduFrames{
+    @apply lg:grid lg:grid-cols-3 py-5 px-4 md:my-10 md:py-7 md:px-12 lg:px-16;
+}
+.aboutEdu{
+    @apply lg:col-span-2 pt-1 ml-2;
+}
+.eduHeads{
+    @apply py-2 font-bold text-2xl md:text-4xl text-center;
+}
+.eduPhotoCo{
+    @apply lg:inline-flex lg:items-center lg:col-span-1 lg:mr-2 md:my-16;
+}
+.eduPhotoCo2{
+    @apply items-center lg:col-span-1 mr-2 lg:my-16;
+}
+
+
+
+
+
+
+/* NCC Courses cards */
+.courseCard{
+    @apply p-1 md:p-2 bg-primary shadow-lg rounded-md lg:rounded-xl cursor-pointer lg:hover:scale-95;
+}
+.summ{
+    @apply w-full bg-gray-100 text-xl lg:text-2xl justify-center text-center font-bold flex px-2 py-3;
+}
+
+
+/* ITPEC Courses */
+.Ctextbox{
+    @apply text-4xl rounded px-4 py-2;
+}
+.Clogo{
+    @apply text-white w-auto pt-5 px-2 inline-flex items-center;
+}
+.Ctext{
+    @apply py-3 px-4 text-sm md:text-lg;
+}
+
+
+
+/* Content Us */
+.conn{
+    @apply hidden md:flex pb-6 rounded-lg justify-center;
+}
+
+
+/* Card from Single Blog */
+.sCard{
+    @apply md:col-span-1 my-16 md:my-0 md:p-1 mx-4 max-w-sm rounded-lg hover:bg-gradient-to-b from-blue-600/80 to-red-500 hover:shadow-xl hover:shadow-red-500 hover:scale-105 transition ease-out duration-150;
+}
+.sCardBody{
+    @apply max-w-sm rounded-xl shadow-md border-4 hover:border-0;
+}
+.sHead{
+    @apply mb-2 text-[16px] lg:text-[22px] font-bold text-gray-900;
+}
+
+/* Award Page */
+.awardCard{
+    @apply col-span-1 mx-3 rounded-md shadow-lg h-[300px] hover:scale-105 transition-all duration-300;
+}
+
+/* Student Corner */
+.sideList{
+    @apply flex items-center py-3 px-6 my-3 rounded-lg transition ease-out duration-200 hover:scale-105 hover:bg-primary hover:text-white;
+}
+.activeCorner{
+    @apply bg-primary text-white;
+}

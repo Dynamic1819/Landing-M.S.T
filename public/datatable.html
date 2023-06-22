@@ -1,0 +1,269 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="flex items-center">
+        <div>
+            <div class="fixed w-full z-10">
+                <nav class=""> <!--backdrop-blur-md-->
+                    <div class="grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md">
+                        <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
+                            <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
+                                <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo" class="w-[55px] md:w-14 py-1 rounded-full">
+                            </div>
+                            <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
+                                <h1 class="flex ml-3 text-lg md:text-2xl sm:inline xs-text[2px]">Admin Dashboard</h1>
+                            </div>
+                        </div>
+    
+                        <!-- Space lol -->
+                        <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
+    
+                        <!-- Navigations -->
+                        <div class="xl:col-span-4 sm:col-span-3 xxs:col-span-1">
+                            <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
+                                <div class="cursor-pointer" onclick="showMenu()">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="smallMenu hidden" id="menu">
+                                    <ul class="px-9 md:px-20 text-lg">
+                                        <li class="py-3">
+                                            <a href="uploadingBlog.html">
+                                                <span>Upload Blogs</span>
+                                            </a>
+                                        </li>
+                                        <li class="py-3">
+                                            <a href="uploadingEvent.html">
+                                                <span>Upload Events</span>
+                                            </a>
+                                        </li>
+                                        <li class="py-3">
+                                            <a href="datatable.html">
+                                                <span>History</span>
+                                            </a>
+                                        </li>
+                                        <li class="py-3">
+                                            <a href="Login.html">
+                                                <span>Log out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="mt-24 mx-4">
+        <main class="ml-4">
+            <div class="relative overflow-x-auto my-5 shadow-md sm:rounded-lg">
+                <div class="pb-4 bg-white">
+                    <label for="table-search" class="sr-only">Search</label>
+                    <div class="relative mt-1">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="text" id="table-search" class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search for items">
+                    </div>
+                </div>
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Blog / Events
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Date
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Authur
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Published / Draft
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                IDK
+                            </th>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                IDK
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <nav class="mx-auto">
+                <ul class="inline-flex items-center">
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 ml-0 rounded-l-lg leading-tight py-2 px-3 ">Previous</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 ">1</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 ">2</a>
+                    </li>
+                    <li>
+                        <a href="#" aria-current="page"
+                            class="bg-blue-50 border border-gray-500 text-blue-700 hover:bg-blue-100 hover:text-blue-700  py-2 px-3">3</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 ">4</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 ">5</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg leading-tight py-2 px-3 ">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+
+    <script>
+        //   Burger menu
+        const menu = document.querySelector('#menu');
+        const burger = document.querySelector('#burger');
+        const cross = document.querySelector('#cross');
+
+        function showMenu(){
+        if(menu.classList.contains('hidden')){
+            menu.classList.remove('hidden');
+            burger.classList.add('hidden');
+            cross.classList.remove('hidden');
+        }
+        else{
+            menu.classList.add('hidden');
+            burger.classList.remove('hidden');
+            cross.classList.add('hidden');
+        }
+        }
+        
+    </script>
+</body>
+</html>

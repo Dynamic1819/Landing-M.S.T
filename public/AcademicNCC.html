@@ -1,0 +1,599 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Education</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/MST.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Top Button -->
+        <div class="fixed bottom-3 right-3 md:bottom-5 md:right-5 bg-red-700 text-white rounded-md z-10">
+            <button class="p-1 xs:p-2 hidden" onclick="toTop()" id="ToTop">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5">
+                  </svg>
+            </button>
+        </div>
+        <!-- Navigations -->
+        <div>
+            <div class="fixed w-full z-50">
+                <nav> <!--backdrop-blur-md-->
+                    <div class=" grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md">
+                        <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
+                            <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
+                                <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo"
+                                    class="w-[55px] md:w-14 py-1 rounded-full">
+                            </div>
+                            <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
+                                <a href="index.html">
+                                <h1 class="flex sm:hidden ml-4 whitespace-nowrap text-lg font-bold xxs:inline">M.S.T
+                                </h1>
+                                <h1 class="flex lg:hidden Uni whitespace-nowrap text-lg md:text-2xl sm:inline xs-text[2px] xxs:hidden">
+                                    M.S.T University</h1>
+                                <h1 class="text-lg mdl:text-[18px] xl:text-2xl font-bold hidden lg:inline md:whitespace-nowrap Uni">
+                                    Myanmar Skills Technologies</h1>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Space lol -->
+                        <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
+
+                        <!-- Navigations -->
+                        <div class="hidden lg:inline top-3 absolute right-6">
+                            <ul class="inline-flex items-center text-lg font-semibold">
+                                <li class="xlists">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops')">
+                                    Course
+                                    <div class="ddops hidden">
+                                        <ul class="space-y-7 py-4">
+                                            <li>
+                                                <a href="AcademicNCC.html">NCC</a>
+                                            </li>
+                                            <li>
+                                                <a href="AcademicITPEC.html">ITPEC</a>
+                                            </li>
+                                            <li>
+                                                <a href="certificate.html">Certificate</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="xlists cursor-pointer whitespace-nowrap" onclick="openMenu('.ddops2')">
+                                    Events & Blogs
+                                    <div class="ddops2 hidden">
+                                        <ul class="space-y-7 py-4">
+                                            <li>
+                                                <a href="events.html">Events</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blogs</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops3')">
+                                    About
+                                    <div class="ddops3 hidden">
+                                        <ul class="space-y-7 py-4">
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="maintain.html">Maintenance</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lg:hidden sm:col-span-3 xxs:col-span-1">
+                            <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
+                                <div class="cursor-pointer" onclick="showMenu()">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor"
+                                            class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor"
+                                            class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="smallMenu translate-x-52" id="menu">
+                                    <ul class=" text-base md:text-lg font-semibold">
+                                        <li class="lists border-b-2">
+                                            <a href="index.html">
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="AcademicNCC.html">
+                                                <span>NCC Educations</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="AcademicITPEC.html">
+                                                <span>ITPEC</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="certificate.html">
+                                                <span>Certificate</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="events.html">
+                                                <span>Events</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="blog.html">
+                                                <span>Blogs</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="about.html">
+                                                <span>About</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists border-b-2">
+                                            <a href="contact.html">
+                                                <span>Contact Us</span>
+                                            </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a href="maintain.html">
+                                                <span>Maintenance</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+
+    <!-- Main Contents -->
+    <main class="pt-20 overflow-hidden">
+
+
+        <div class="px-4 py-12">
+            <div class="flex justify-center">
+                <h1 class="Headtext">NCC Education</h1>
+            </div>
+        </div>
+
+        <div class="pb-4 md:pb-10">
+
+            <!-- Foundation Diploma -->
+            <div class="mb-5 md:mb-20 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl md:text-3xl font-bold">Foundation Diploma</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque dolorum culpa corporis quos, quae vel distinctio asperiores? Iure, nisi voluptate? Ut cum quos veniam, voluptatem molestiae nostrum distinctio tempora?</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex md:space-x-36 space-y-4 text-lg items-baseline font-semibold md:text-2xl">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">Level 3 Foundation Diploma</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 3 Foundation Diploma</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diploma in Computing -->
+            <div class="my-5 md:my-20 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-5 md:py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl whitespace-nowrap md:text-3xl font-bold">Diploma in Computing</span>
+                        <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima accusantium facere impedit sint exercitationem. Consequatur aliquam temporibus magni quibusdam eaque facere, numquam, tempora beatae fugiat recusandae facilis voluptatibus! Maiores, ex.</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex lg:space-x-10 space-y-4 text-xl items-baseline font-semibold">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">L3 Diploma in Computing</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 3 Diploma in Computing</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">L4 Diploma in Computing</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 4 Diploma in Computing</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">L5 Diploma in Computing</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 5 Diploma in Computing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diploma in Business -->
+            <div class="my-5 md:my-20 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl whitespace-nowrap md:text-3xl font-bold">Diploma in Business</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque dolorum culpa corporis quos, quae vel distinctio asperiores? Iure, nisi voluptate? Ut cum quos veniam, voluptatem molestiae nostrum distinctio tempora?</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex lg:space-x-24 space-y-4 text-lg items-baseline font-semibold md:text-2xl">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">Level 3 DB</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 3 Diploma in Business</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">Level 4 DB</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 4 Diploma in Business</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">Level 5 DB</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 5 Diploma in Business</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diploma in Business IT -->
+            <div class="my-5 md:my-20 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl whitespace-nowrap md:text-3xl font-bold">Diploma in Business IT</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque dolorum culpa corporis quos, quae vel distinctio asperiores? Iure, nisi voluptate? Ut cum quos veniam, voluptatem molestiae nostrum distinctio tempora?</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex lg:space-x-20 space-y-4 text-lg items-baseline font-semibold md:text-2xl">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">Level 3 DBIT</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary whitespace-nowrap">Level 3 Diploma in Business IT</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">Level 4 DBIT</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary whitespace-nowrap">Level 4 Diploma in Business IT</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">Level 5 DBIT</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary whitespace-nowrap">Level 5 Diploma in Business IT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diploma in Cyber Security -->
+            <div class="my-5 md:my-20 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl md:text-3xl font-bold">Diploma in Cyber Security</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque dolorum culpa corporis quos, quae vel distinctio asperiores? Iure, nisi voluptate? Ut cum quos veniam, voluptatem molestiae nostrum distinctio tempora?</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex space-y-4 text-lg items-baseline font-semibold md:text-2xl">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary">Level 5 DCS</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">Level 5 Diploma in Cyber Security</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- B.Sc(Hons) -->
+            <div class="my-5 md:my-10 px-4 md:px-16 shadow-lg bg-white">
+                <div class="md:grid md:grid-cols-7 py-10">
+                    <div class="md:col-span-2">
+                        <img src="../assets/images/cambridge.JPG" alt="">
+                    </div>
+                    <div class="md:col-span-5 px-7 space-y-4 pt-5 md:pt-0">
+                        <span class="text-2xl whitespace-nowrap md:text-3xl font-bold">B.Sc(Hons)</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque dolorum culpa corporis quos, quae vel distinctio asperiores? Iure, nisi voluptate? Ut cum quos veniam, voluptatem molestiae nostrum distinctio tempora? lo</p>
+                        <div class="text-center">
+                            <ul class="lg:inline-flex lg:space-x-10 space-y-4 text-lg items-baseline font-semibold md:text-2xl">
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">B.Sc(Hons) BC/IS</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">B.Sc(Hons) Business Computing/Information System</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">B.Sc(Hons) CS</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">B.Sc(Hons) Cyber Security</a>
+                                </li>
+                                <li>
+                                    <a href="L3DC.html" class="hidden lg:inline hover:underline hover:text-primary whitespace-nowrap">B.A(Hons) Business</a>
+                                    <a href="L3DC.html" class="lg:hidden text-primary">B.A(Hons) Business</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <!-- About NCC Education -->
+    <div class="flex py-10">
+        <div class="md:grid md:grid-cols-5 px-7 bg-white">
+            <div class="md:col-span-2 lg:px-12 py-6 border-b-2 sm:border-0">
+                <h2 class="text-4xl font-bold">About</h2>
+                <h2 class="text-4xl font-bold">NCC Education</h2>
+            </div>
+            <div class="md:col-span-3 px-1 py-6 lg:px-16">
+                <p class="text-sm md:text-lg">
+                    Founded in 1966, NCC Education is an awarding body and a global provider of British education. We are committed to providing every learner with an internationally recognised qualifications. Since our inception, we have developed a network of over 200 partner centres located in more than 50 countries.We specialises in the development of IT and Business qualifications from primary to postgraduate level.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="border-2 border-primary mx-10 md:mx-20 mb-4"></div>
+
+
+    <!-- Other Posts -->
+    <div class="md:pt-4">
+        <div class="bg-white md:px-5">
+            <div class="py-4 px-2">
+                <h2 class="text-3xl font-bold text-center md:text-left">Latest Events</h2>
+            </div>
+
+            <div>
+                <div class="md:grid md:grid-cols-3 py-4">
+                    <div class="sCard">
+                        <div class="sCardBody">
+                            <img class="rounded-t-lg" src="../assets/images/cambridge.JPG" alt="Blog Photo">
+                            <div class="px-2 bg-white rounded-b-lg">
+                                <div>
+                                   <h5 class="sHead">Blog Title will go here</h5> 
+                                </div>
+                                <span>1/1/2000</span>
+                                <div>
+                                    <span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    </span>
+                                </div>
+                                <div class="pt-6 pb-3">
+                                    <a href="blogSingle.html" class="block items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCard">
+                        <div class="sCardBody">
+                            <img class="rounded-t-lg" src="../assets/images/cambridge.JPG" alt="Blog Photo">
+                            <div class="px-2 bg-white rounded-b-lg">
+                                <div>
+                                   <h5 class="sHead">Blog Title will go here</h5> 
+                                </div>
+                                <span>1/1/2000</span>
+                                <div>
+                                    <span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    </span>
+                                </div>
+                                <div class="pt-6 pb-3">
+                                    <a href="blogSingle.html" class="block items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCard">
+                        <div class="sCardBody">
+                            <img class="rounded-t-lg" src="../assets/images/cambridge.JPG" alt="Blog Photo">
+                            <div class="px-2 bg-white rounded-b-lg">
+                                <div>
+                                   <h5 class="sHead">Blog Title will go here</h5> 
+                                </div>
+                                <span>1/1/2000</span>
+                                <div>
+                                    <span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    </span>
+                                </div>
+                                <div class="pt-6 pb-3">
+                                    <a href="blogSingle.html" class="block items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pt-20 bg-white"></div>
+
+
+    <!-- Contact Us -->
+    <div class="lg:px-4 bg-primary text-gray-400">
+        <div class="lg:grid lg:grid-cols-4 px-3 md:px-5 py-10">
+            <div class="lg:col-span-1 px-4 md:mr-4 py-5 font-semibold">
+                <div class="inline-flex items-center pb-5">
+                    <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo" class="w-10 rounded-full">
+                    <span class="text-2xl pl-3 text-gray-200">M.S.T University</span>
+                </div>
+                <div>
+                    <div class="inline-flex items-center pb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>                              
+                        <p class="pl-3 text-xl">Campus 1</p>
+                    </div>
+                    <p>No.36, Alanpya Pagoda Road, Mingalar Taungnyunt Township, Yangon, Myanmar</p>
+                </div>
+                <div class="pt-2">
+                    <div class="inline-flex items-center pb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>                              
+                        <p class="pl-3 text-xl">Campus 2</p>
+                    </div>
+                    <p>No.5, Yaw Min Gyi St., Dagon Township, Yangon</p>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="lg:col-span-1 px-4 py-5 lg:border-l-2">
+                <h4 class="text-2xl font-semibold border-b-2 pb-2 mb-2 text-gray-200">Education</h4>
+                <ul class="text-lg font-semibold pt-5">
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                              </svg>                                      
+                                <a href="AcademicNCC.html" class="pl-3">NCC Education</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                              </svg>                                      
+                            <a href="AcademicITPEC.html" class="pl-3">ITPEC</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                              </svg>                                      
+                            <a href="certificate.html" class="pl-3">Certificate</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:col-span-1 px-4 py-5">
+                <h4 class="text-2xl font-semibold border-b-2 pb-2 mb-2 text-gray-200">Quick Links</h4>
+                <span class="w-full h-[2px] border-t-2"></span>
+                <ul class="text-lg font-semibold pt-5">
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                            </svg> 
+                            <a href="index.html" class="pl-3">Home</a>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                            </svg> 
+                            <a href="events.html" class="pl-3">Events</a>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                            </svg> 
+                            <a href="blog.html" class="pl-3">Blogs</a>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                            </svg> 
+                            <a href="about.html" class="pl-3">About Us</a>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inline-flex items-center hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                            </svg> 
+                            <a href="contact.html" class="pl-3">Contact Us</a>  
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:col-span-1 px-4 py-5">
+                <h4 class="text-2xl font-semibold border-b-2 pb-2 mb-2 text-gray-200">Contact Us</h4>
+                <ul class="text-lg font-semibold pt-5">
+                    <li class="py-1 hover:text-gray-200">
+                        <div class="inline-flex items-center">
+                            <span class="px-[9px] text-[26px] bg-white text-primary rounded-full font-bold">f</span>
+                            <a href="https://www.facebook.com/MyanmarSkillofTechnologies" target="_blank" class="pl-3">M.S.T University</a>
+                        </div>
+                    </li>
+                    <li class="py-1 hover:text-gray-200">
+                        <div class="inline-flex items-center">
+                            <div class="inline-flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                  </svg>   
+                                <a href="mailto:info@mstinstitute.net" target="_blank" class="pl-3">
+                                    info@mstinstitute.net
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-1 hover:text-gray-200">
+                        <div class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>  
+                            <a href="tel:+959422288106" target="_blank" class="pl-3">
+                                +959422288106
+                            </a>
+                        </div>
+                    </li>
+                    <li class="py-1 hover:text-gray-200">
+                        <div class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>  
+                            <a href="tel:+959422288601" target="_blank" class="pl-3">
+                                +959422288601
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+<script src="app.js"></script>
+</body>
+</html>

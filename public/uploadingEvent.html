@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploading</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+</head>
+<body>
+    <div>
+        <header class="flex items-center">
+            <div>
+                <div class="fixed w-full z-10">
+                    <nav class=""> <!--backdrop-blur-md-->
+                        <div class="grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md ">
+                            <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
+                                <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
+                                    <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo" class="w-[55px] md:w-14 py-1 rounded-full">
+                                </div>
+                                <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
+                                    <h1 class="flex ml-3 text-lg md:text-2xl sm:inline xs-text[2px]">Dashboard</h1>
+                                </div>
+                            </div>
+        
+                            <!-- Space lol -->
+                            <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
+        
+                            <!-- Navigations -->
+                            <div class="xl:col-span-4 sm:col-span-3 xxs:col-span-1">
+                                <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
+                                    <div class="cursor-pointer" onclick="showMenu()">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="smallMenu hidden" id="menu">
+                                        <ul class="px-9 md:px-20 text-lg">
+                                            <li class="py-3">
+                                                <a href="uploadingBlog.html">
+                                                    <span>Upload Blogs</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="uploadingEvent.html">
+                                                    <span>Upload Events</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="datatable.html">
+                                                    <span>History</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="Login.html">
+                                                    <span>Log out</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="mt-24 mx-4">
+            <div>
+                <!-- Breadcrumb-->
+                <nav class="px-5 py-3 text-gray-800 w-full">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3 w-full">
+                    <li class="inline-flex items-center">
+                        <a href="#" class="inline-flex items-center text-[11px] md:text-sm font-medium text-gray-500 hover:text-black">
+                        <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                        Home
+                        </a>
+                    </li>
+                    <li class="inline-flex items-center">
+                        <a href="uploadingEvent.html" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-black">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-[11px] md:text-sm font-medium md:ml-2">Events</span>
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-[11px] md:text-sm font-medium md:ml-2 text-gray-400">Create</span>
+                        </div>
+                    </li>
+                    </ol>
+                </nav>
+            </div> 
+            <main class="ml-4">
+                <form action="">
+                      <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" name="event_title" id="event_title" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
+                            <label for="event_title" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Event Title</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" name="event_author" id="event_author" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
+                            <label for="event_author" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Event Author</label>
+                        </div>
+                      </div>
+                      <div class="relative z-0 w-full mb-6 group">
+                          <label class="block mb-2 text-lg font-medium text-gray-900" for="multiple_files">Images</label>
+                          <input class="block w-full text-sm text-gray-900 cursor-pointer bg-gray-200 focus:outline-none" id="multiple_files" type="file" multiple>
+                      </div>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <label class="block mb-2 text-lg font-medium text-gray-900" for="summernote">Contents</label>
+                        <div id="summernote" class="max-w-xs"></div>
+                    </div>
+                      <div class="flex items-center my-4">
+                        <input id="publish" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                        <label for="publish" class="ml-2 text-sm font-medium text-gray-900">Published</label>
+                    </div>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+                </form>
+  
+            </main>
+        </div>
+    </div>
+
+    <script>
+          $(document).ready(function() {
+              $('#summernote').summernote({height: 250,});
+          });
+
+          //   Burger menu
+        const menu = document.querySelector('#menu');
+        const burger = document.querySelector('#burger');
+        const cross = document.querySelector('#cross');
+
+        function showMenu(){
+        if(menu.classList.contains('hidden')){
+            menu.classList.remove('hidden');
+            burger.classList.add('hidden');
+            cross.classList.remove('hidden');
+        }
+        else{
+            menu.classList.add('hidden');
+            burger.classList.remove('hidden');
+            cross.classList.add('hidden');
+        }
+        }
+        
+    </script>
+</body>
+</html>
