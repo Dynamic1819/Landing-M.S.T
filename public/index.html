@@ -10,7 +10,14 @@
 </head>
 
 <body>
-    <div>
+    <!-- Loader -->
+    <div class="absolute z-50 top-1/2 left-1/2" id="loading-animation">
+        <div class="square-circle-1">
+            <img src="../assets/images/M.S.T LOGO.jpg" alt="" class="rounded-full">
+        </div>
+    </div>
+    <div id="content">
+        
         <!-- Top Button -->
         <div class="fixed bottom-5 right-5 bg-red-700 text-white rounded-md z-10">
             <button class="p-1 xs:p-2 hidden" onclick="toTop()" id="ToTop">
@@ -24,7 +31,7 @@
 
         <!-- Navigations -->
         <div>
-            <div class="fixed w-full z-50">
+            <div class="fixed w-full z-40">
                 <nav> <!--backdrop-blur-md-->
                     <div class=" grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md">
                         <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">

@@ -74,3 +74,71 @@ displayNum.forEach(nums => {
     };
     updateCounter();
 });
+
+//loading
+document.addEventListener("DOMContentLoaded", function() {
+    // Show the loading animation
+    document.getElementById("loading-animation").style.display = "block";
+  });
+  
+  window.addEventListener("load", function() {
+    // Get the loading animation element
+    var loadingAnimation = document.getElementById("loading-animation");
+  
+    // Set the initial opacity to 1 (fully opaque)
+    loadingAnimation.style.opacity = 1;
+  
+    // Create a function to gradually decrease the opacity
+    var fadeOutAnimation = function() {
+      // Get the current opacity value
+      var currentOpacity = Number(loadingAnimation.style.opacity);
+  
+      // Decrease the opacity by a small amount
+      var newOpacity = currentOpacity - 0.1;
+  
+      // Set the new opacity value
+      loadingAnimation.style.opacity = newOpacity;
+  
+      // If the animation is not yet complete, schedule the next frame
+      if (newOpacity > 0) {
+        requestAnimationFrame(fadeOutAnimation);
+      } else {
+        // Hide the loading animation when it becomes transparent
+        loadingAnimation.style.display = "none";
+      }
+    };
+  
+    // Start the fade-out animation after a delay of 2 seconds (2000 milliseconds)
+    setTimeout(fadeOutAnimation, 1500);
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    // Set the initial opacity of the content to 0
+    document.getElementById("content").style.opacity = 0;
+  });
+
+  window.addEventListener("load", function() {
+    // Get the content element
+    var content = document.getElementById("content");
+
+    // Create a function to gradually increase the opacity
+    var fadeInAnimation = function() {
+      // Get the current opacity value
+      var currentOpacity = Number(content.style.opacity);
+
+      // Increase the opacity by a small amount
+      var newOpacity = currentOpacity + 0.01;
+
+      // Set the new opacity value
+      content.style.opacity = newOpacity;
+
+      // If the animation is not yet complete, schedule the next frame
+      if (newOpacity < 1) {
+        requestAnimationFrame(fadeInAnimation);
+      }
+    };
+
+    // Start the fade-in animation
+    fadeInAnimation();
+  });
+  
+  
