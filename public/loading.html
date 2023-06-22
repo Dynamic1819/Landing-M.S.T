@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .square-circle-1 {
+    background-color: white;
+    width:200px;
+    aspect-ratio:0;
+    border:3px solid #041562;
+    animation:sc1 2s infinite;
+  }
+  @keyframes sc1 {
+    0%   {border-radius:50% 50% 0   0  }
+    25%  {border-radius:0   50% 50% 0  }
+    50%  {border-radius:0   0   50% 50%}
+    75%  {border-radius:50% 0   0   50%}
+    100% {border-radius:50% 50% 0   0  }
+  }
+    </style>
+</head>
+<body>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2">
+        <div class="flex justify-center">
+            <div class="square-circle-1">
+                <img src="../assets/images/M.S.T LOGO.jpg" alt="" class="rounded-full">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
