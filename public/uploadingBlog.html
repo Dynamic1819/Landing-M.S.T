@@ -12,140 +12,100 @@
 <body>
     <div>
         <!-- Navigations -->
-        <div>
-            <div class="fixed w-full z-50">
-                <nav> <!--backdrop-blur-md-->
-                    <div class=" grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md">
-                        <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
-                            <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
-                                <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo"
-                                    class="w-[55px] md:w-14 py-1 rounded-full">
-                            </div>
-                            <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
-                                <a href="index.html">
-                                <h1 class="flex sm:hidden ml-4 whitespace-nowrap text-lg font-bold xxs:inline">M.S.T
-                                </h1>
-                                <h1 class="flex lg:hidden Uni whitespace-nowrap text-lg md:text-2xl sm:inline xs-text[2px] xxs:hidden">
-                                    M.S.T University</h1>
-                                <h1 class="text-lg mdl:text-[18px] xl:text-2xl font-bold hidden lg:inline md:whitespace-nowrap Uni">
-                                    Myanmar Skills Technologies</h1>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Space lol -->
-                        <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
-
-                        <!-- Navigations -->
-                        <div class="hidden lg:inline top-3 absolute right-6">
-                            <ul class="inline-flex items-center text-lg font-semibold">
-                                <li class="xlists">
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops')">
-                                    Course
-                                    <div class="ddops hidden">
-                                        <ul class="space-y-7 py-4">
-                                            <li>
-                                                <a href="AcademicNCC.html">NCC</a>
-                                            </li>
-                                            <li>
-                                                <a href="AcademicITPEC.html">ITPEC</a>
-                                            </li>
-                                            <li>
-                                                <a href="certificate.html">Skill Certifications</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="xlists cursor-pointer whitespace-nowrap" onclick="openMenu('.ddops2')">
-                                    Activities
-                                    <div class="ddops2 hidden">
-                                        <ul class="space-y-7 py-4">
-                                            <li>
-                                                <a href="events.html">Events</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blogs</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Awards</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Students' Corner</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="xlists cursor-pointer" onclick="openMenu('.ddops3')">
-                                    About
-                                    <div class="ddops3 hidden">
-                                        <ul class="space-y-7 py-4">
-                                            <li>
-                                                <a href="about.html">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">Contact Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="maintain.html">Maintenance</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="lg:hidden sm:col-span-3 xxs:col-span-1">
-                            <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
-                                <div class="cursor-pointer" onclick="showMenu()">
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor"
-                                            class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor"
-                                            class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </div>
+        <header class="flex items-center">
+            <div>
+                <div class="fixed w-full z-10">
+                    <nav class=""> <!--backdrop-blur-md-->
+                        <div class="grid xl:grid-cols-8 sm:grid-cols-5 xxs:grid-cols-2 bg-gray-300 lg:bg-gray-300/60 backdrop-blur-md ">
+                            <div class="flex xl:col-span-3 sm:col-span-2 xxs:col-span-1 pl-3 bg-primary rounded-r-full xl:rounded-none">
+                                <div class="w-10 xs:w-auto pt-[5px] sm:w-auto xs:pt-0 mdl:pt-1">
+                                    <img src="../assets/images/M.S.T LOGO.jpg" alt="M.S.T Logo" class="w-[55px] md:w-14 py-1 rounded-full">
                                 </div>
-                                <div class="smallMenu translate-x-52" id="menu">
-                                    <ul class=" text-base md:text-lg font-semibold space-y-3">
-                                        <li class="lists">
-                                            <a href="uploadingEvent.html">
-                                                <span>Upload Event</span>
-                                            </a>
-                                        </li>
-                                        <li class="lists">
-                                            <a href="uploadingBlog.html">
-                                                <span>Upload Blog</span>
-                                            </a>
-                                        </li>
-                                        <li class="lists">
-                                            <a href="AcademicITPEC.html">
-                                                <span>Events and Blogs History</span>
-                                            </a>
-                                        </li>
-                                        <li class="lists">
-                                            <a href="certificate.html">
-                                                <span>Certificate</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div class="sm:py-5 sm:mx-1 sm:px-3 xs:pt-5 xxs:pt-4 xs:px-0 mdl:mx-8 text-gray-100">
+                                    <h1 class="flex ml-3 text-lg md:text-2xl sm:inline xs-text[2px]">Dashboard</h1>
+                                </div>
+                            </div>
+        
+                            <!-- Space lol -->
+                            <div class="lg:col-span-1 bg-primary rounded-r-full hidden xl:inline"></div>
+        
+                            <!-- Navigations -->
+                            <div class="xl:col-span-4 sm:col-span-3 xxs:col-span-1">
+                                <div class="flex justify-end xs:py-3 xs:px-3 py-4 px-6">
+                                    <div class="cursor-pointer" onclick="showMenu()">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300" id="burger">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 xs:w-9 transition ease-out duration-300 hidden" id="cross">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adminSmallMenu hidden" id="menu">
+                                        <ul class="px-9 md:px-14 text-lg">
+                                            <li class="py-3">
+                                                <a href="uploadingBlog.html">
+                                                    <span>Upload Blogs</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="uploadingEvent.html">
+                                                    <span>Upload Events</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="datatable.html">
+                                                    <span>Events and Blogs Table</span>
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="cornerApprove.html">
+                                                    Students' Corner
+                                                </a>
+                                            </li>
+                                            <li class="py-3">
+                                                <a href="Login.html">
+                                                    <span>Log out</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="pt-16 mx-4">
+            <div>
+                <!-- Breadcrumb-->
+                <nav class="px-5 py-3 text-gray-800 w-full">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3 w-full">
+                    <li class="inline-flex items-center">
+                        <a href="#" class="inline-flex items-center text-[11px] md:text-sm font-medium text-gray-500 hover:text-black">
+                        <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                        Home
+                        </a>
+                    </li>
+                    <li class="inline-flex items-center">
+                        <a href="uploadingBlog.html" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-black">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-[11px] md:text-sm font-medium md:ml-2">Blog</span>
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-[11px] md:text-sm font-medium md:ml-2 text-gray-400">Create</span>
+                        </div>
+                    </li>
+                    </ol>
                 </nav>
             </div>
-        </div>
-        <div class="mt-24 mx-4">
             <main class="ml-4">
                 <form action="">
                       <div class="grid md:grid-cols-2 md:gap-6">
@@ -181,7 +141,23 @@
           $(document).ready(function() {
               $('#summernote').summernote({height: 250,});
           });
+            //   Burger menu
+        const menu = document.querySelector('#menu');
+        const burger = document.querySelector('#burger');
+        const cross = document.querySelector('#cross');
+
+        function showMenu(){
+        if(menu.classList.contains('hidden')){
+            menu.classList.remove('hidden');
+            burger.classList.add('hidden');
+            cross.classList.remove('hidden');
+        }
+        else{
+            menu.classList.add('hidden');
+            burger.classList.remove('hidden');
+            cross.classList.add('hidden');
+        }
+        }
     </script>
-    <script src="app.js"></script>
 </body>
 </html>
