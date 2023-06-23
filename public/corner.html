@@ -118,66 +118,77 @@
                                         </div>
                                     </div>
                                     <div class="smallMenu translate-x-52" id="menu">
-                                        <ul class=" text-base md:text-lg font-semibold space-y-1">
-                                            <li class="lists">
+                                        <ul class="text-base md:text-lg font-semibold space-y-3">
+                                            <li class="text-lg hover:text-secondary">
                                                 <a href="index.html">
                                                     <span>Home</span>
                                                 </a>
                                             </li>
-                                            <li class="lists">
-                                                <a href="AcademicNCC.html">
-                                                    <span>NCC Educations</span>
-                                                </a>
+                                            <li class="lists" onclick="openMenu('.ddopsm')">
+                                                <div class="flex items-center justify-center">
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                    <span class="px-1">Course</span>
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                </div>
+                                                <div class="ddopsm hidden">
+                                                    <ul class="space-y-5 bg-primary text-white py-4">
+                                                        <li>
+                                                            <a href="AcademicNCC.html">NCC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="AcademicITPEC.html">ITPEC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="certificate.html">Skill Certifications</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </li>
-                                            <li class="lists">
-                                                <a href="AcademicITPEC.html">
-                                                    <span>ITPEC</span>
-                                                </a>
+                                            <li class="text-lg" onclick="openMenu('.ddopsm2')">
+                                                <div class="flex items-center justify-center">
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                    <span class="px-1">Activities</span>
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                </div>
+                                                <div class="ddopsm2 hidden">
+                                                    <ul class="space-y-5 bg-primary text-white py-4">
+                                                        <li>
+                                                            <a href="events.html">Events</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Blogs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="awards.html">Awards</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="cornerLogin.html">Students' Corner</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </li>
-                                            <li class="lists">
-                                                <a href="certificate.html">
-                                                    <span>Certificate</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="events.html">
-                                                    <span>Events</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="blog.html">
-                                                    <span>Blogs</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="awards.html">
-                                                    <span>Awards</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="corner.html">
-                                                    <span>Students' Corner</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="about.html">
-                                                    <span>About</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="contact.html">
-                                                    <span>Contact Us</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="maintain.html">
-                                                    <span>Maintenance</span>
-                                                </a>
-                                            </li>
-                                            <li class="lists">
-                                                <a href="datatable.html">
-                                                    <span>Admin</span>
-                                                </a>
+                                            <li class="lists" onclick="openMenu('.ddopsm3')">
+                                                <div class="flex items-center justify-center">
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                    <span class="px-1">About</span>
+                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                </div>
+                                                <div class="ddopsm3 hidden">
+                                                    <ul class="space-y-5 bg-primary text-white py-4">
+                                                        <li>
+                                                            <a href="about.html">About Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="contact.html">Contact Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="maintain.html">Maintenance</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="datatable.html">Admin</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -197,7 +208,7 @@
                     </svg>
                 </button>
                 
-                <aside id="sidebar-multi-level-sidebar" class="fixed top-16 left-0 z-40 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
+                <aside id="sidebar-multi-level-sidebar" class="fixed top-20 left-0 z-40 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
                     <div class="h-full px-3 py-4 overflow-y-auto">
                         <div class="py-10">
                             <img src="../assets/images/M.S.T LOGO.jpg" alt="" class="w-16 rounded-full mx-auto">

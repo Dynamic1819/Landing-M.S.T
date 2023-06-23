@@ -1,5 +1,5 @@
 function openMenu(menus) {
-    let menusItems = ['.ddops', '.ddops2', '.ddops3'];
+    let menusItems = ['.ddops', '.ddops2', '.ddops3', '.ddopsm', '.ddopsm2', '.ddopsm3'];
     menusItems = menusItems.filter(item => item !== menus)
     menusItems.forEach((item) => {
         const menuItem = document.querySelector(item);

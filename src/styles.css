@@ -71,7 +71,7 @@
 
 /* Navigation for every pages */
 .lists{
-    @apply py-2 px-7 hover:text-secondary;
+    @apply py-2 text-lg;
 }
 .xlists{
     @apply py-2 px-7 hover:text-secondary text-center whitespace-nowrap;
@@ -92,7 +92,7 @@
 /* Burger Menu */
 
 .smallMenu{
-    @apply absolute h-screen rounded-bl-xl bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center transition ease-out duration-200;
+    @apply absolute w-44 h-screen border-l-2 border-b-2 overflow-y-auto rounded-bl-xl py-3 bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center transition ease-out duration-200;
 }
 .adminSmallMenu{
     @apply absolute h-screen rounded-bl-xl bg-primary right-0 text-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center;
