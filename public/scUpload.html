@@ -182,7 +182,7 @@
         </div>
         <main class="pt-16">
             <div class="relative">
-                <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="fixed z-50 bg-primary bottom-5 right-2 inline-flex items-center p-2 mt-2 ml-3 text-sm text-white rounded-lg sm:hidden hover:bg-transparent">
+                <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="fixed bg-primary z-30 bottom-5 right-2 inline-flex items-center p-2 mt-2 ml-3 text-sm text-white rounded-lg sm:hidden hover:bg-transparent">
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                     </svg>
@@ -254,10 +254,29 @@
                     </div>
                 </aside>
                 <div class="md:w-4/6 lg:w-4/5 lg:p-5 ml-auto overflow-y-auto bg-gray-300">
-                    <form action="" class="bg-white p-4 rounded-lg">
+                    <div class="bg-white">
+                        <!-- Breadcrumb-->
+                        <nav class="px-5 py-3 text-gray-800 w-full">
+                            <ol class="inline-flex items-center space-x-1 md:space-x-3 w-full">
+                            <li class="inline-flex items-center">
+                                <a href="corner.html" class="inline-flex items-center text-[11px] md:text-sm font-medium text-gray-500 hover:text-black">
+                                <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                                Corners
+                                </a>
+                            </li>
+                            <li class="inline-flex items-center">
+                                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-black">
+                                <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="ml-1 text-[11px] md:text-sm font-medium md:ml-2">Create Post</span>
+                                </a>
+                            </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <form action="" class="bg-white p-4">
                         <div class="grid md:grid-cols-2 md:gap-6">
                           <div class="relative z-0 w-full mb-6 group">
-                              <input type="text" name="event_title" id="event_title" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
+                              <input type="text" name="event_title" id="event_title" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
                               <label for="event_title" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Post Title</label>
                           </div>
                           <div class="relative z-0 w-full mb-6 group">
@@ -272,10 +291,6 @@
                       <div class="relative z-0 w-full mb-6 group">
                           <label class="block mb-2 text-lg font-medium text-gray-900" for="summernote">Contents (For Knowledge Share)</label>
                           <div id="summernote" class="max-w-xs"></div>
-                      </div>
-                        <div class="flex items-center my-4">
-                          <input id="publish" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
-                          <label for="publish" class="ml-2 text-sm font-medium text-gray-900">Published</label>
                       </div>
                       <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
                   </form>

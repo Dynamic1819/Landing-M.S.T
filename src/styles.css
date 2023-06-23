@@ -95,7 +95,7 @@
     @apply absolute h-screen rounded-bl-xl bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center transition ease-out duration-200;
 }
 .adminSmallMenu{
-    @apply absolute h-screen rounded-bl-xl bg-primary text-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center;
+    @apply absolute h-screen rounded-bl-xl bg-primary right-0 text-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center;
 }
 /* error page */
 
