@@ -35,11 +35,11 @@
             </svg>
         </button>
         
-        <aside id="sidebar-multi-level-sidebar" class="fixed top-[53] px-3 md:top-20 left-0 z-40 w-1/2 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
+        <aside id="sidebar-multi-level-sidebar" class="fixed top-16 py-5 px-3 md:top-20 left-0 z-40 w-1/2 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
             <div class="h-full overflow-y-auto text-sm">
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="admindash.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-primary hover:text-white group">
+                    <a href="admindash.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-primary hover:text-white group activeCorner">
                         <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 lg:w-6 lg:h-6 transition duration-75 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
                         <span class="flex-1 ml-2 whitespace-nowrap">Dashboard</span>
                     </a>
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="datatable.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-primary hover:text-white activeCorner">
+                    <a href="datatable.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-primary hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 w-5 h-5 lg:w-6 lg:h-6 transition duration-75 group-hover:text-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
                           </svg>
@@ -259,35 +259,36 @@
                             </tbody>
                         </table>
                     </div>
+                    <!-- Pagination -->
                     <div class="flex justify-center py-4">
                         <ul class="inline-flex items-center text-sm md:text-base">
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 ml-0 rounded-l-lg leading-tight md:py-2 px-3 ">Previous</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 ml-0 rounded-l-lg leading-tight py-2 px-3 ">Previous</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight md:py-2 px-3">1</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3">1</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight md:py-2 px-3">2</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3">2</a>
                             </li>
                             <li>
                                 <a href="#" aria-current="page"
-                                    class="bg-blue-50 border border-gray-500 text-blue-700 hover:bg-blue-100 hover:text-blue-700 md:py-2 px-3">3</a>
+                                    class="bg-blue-50 border border-gray-500 text-blue-700 hover:bg-blue-100 hover:text-blue-700 py-2 px-3">3</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight md:py-2 px-3">4</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3">4</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight md:py-2 px-3">5</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3">5</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg leading-tight md:py-2 px-3">Next</a>
+                                    class="bg-white border border-gray-500 text-gray-800 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg leading-tight py-2 px-3">Next</a>
                             </li>
                         </ul>
                     </div>
