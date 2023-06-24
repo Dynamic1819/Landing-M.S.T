@@ -3863,6 +3863,10 @@ video {
     border-right-width: 4px;
   }
 
+  .md\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
   .md\:bg-none {
     background-image: none;
   }
@@ -3983,6 +3987,10 @@ video {
 
   .md\:pt-\[70px\] {
     padding-top: 70px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-left {
