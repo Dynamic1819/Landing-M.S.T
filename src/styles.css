@@ -194,7 +194,7 @@
 
 /* Award Page */
 .awardCard{
-    @apply col-span-1 mx-3 rounded-md shadow-lg h-[300px] hover:scale-105 transition-all duration-300;
+    @apply md:col-span-1 mx-3 rounded-md shadow-lg h-auto hover:scale-105 transition-all duration-300;
 }
 
 /* Student Corner */
