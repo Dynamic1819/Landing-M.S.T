@@ -643,8 +643,8 @@ video {
   bottom: 0px;
 }
 
-.bottom-3 {
-  bottom: 0.75rem;
+.bottom-20 {
+  bottom: 5rem;
 }
 
 .bottom-5 {
@@ -673,10 +673,6 @@ video {
 
 .right-2 {
   right: 0.5rem;
-}
-
-.right-3 {
-  right: 0.75rem;
 }
 
 .right-5 {
@@ -713,26 +709,6 @@ video {
 
 .top-\[53\] {
   top: 53;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-12 {
-  bottom: 3rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-24 {
-  bottom: 6rem;
 }
 
 .-z-10 {
@@ -3079,6 +3055,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3205,6 +3186,11 @@ video {
 .focus\:ring-violet-400:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(167 139 250 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-red-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(252 165 165 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-opacity-25:focus {
@@ -3631,18 +3617,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
-  .md\:bottom-5 {
-    bottom: 1.25rem;
-  }
-
-  .md\:right-5 {
-    right: 1.25rem;
-  }
-
   .md\:top-20 {
     top: 5rem;
   }
