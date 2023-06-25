@@ -31,19 +31,20 @@
 
 
 .square-circle-1 {
-    background-color: white;
-    width:50px;
+    background-color: #041562;
+    width:60px;
+    padding: 5px;
     aspect-ratio:0;
-    border:3px solid #041562;
+    border:1px solid white;/* #041562 */
     animation:sc1 2s infinite;
     opacity: 1;
   }
   @keyframes sc1 {
-    0%   {border-radius:50% 50% 0   0  }
-    25%  {border-radius:0   50% 50% 0  }
-    50%  {border-radius:0   0   50% 50%}
-    75%  {border-radius:50% 0   0   50%}
-    100% {border-radius:50% 50% 0   0  }
+    0%   {border-radius:50% 50% 10%   10%  }
+    25%  {border-radius:10%   50% 50% 10%  }
+    50%  {border-radius:10%   10%   50% 50%}
+    75%  {border-radius:50% 10%   10%   50%}
+    100% {border-radius:50% 50% 10%   10%  }
   }
 
 /* University photo in Home Page */
@@ -92,11 +93,11 @@
 /* Burger Menu */
 
 .smallMenu{
-    @apply absolute w-44 h-screen border-l-2 border-b-2 overflow-y-auto rounded-bl-xl py-3 bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center transition ease-out duration-200;
+    @apply absolute w-[165px] border-l-2 border-b-2 overflow-y-auto rounded-bl-xl py-3 bg-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] transition ease-out duration-200;
 }
-.adminSmallMenu{
+/* .adminSmallMenu{
     @apply absolute h-screen rounded-bl-xl bg-primary right-0 text-white translate-y-[44px] xs:translate-y-[51px] md:translate-y-[60px] text-center;
-}
+} */
 /* error page */
 
 /* .Navlist{
