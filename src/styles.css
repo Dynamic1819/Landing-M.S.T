@@ -35,7 +35,7 @@
     width:60px;
     padding: 5px;
     aspect-ratio:0;
-    border:1px solid white;/* #041562 */
+    /* border:1px solid white;#041562 */
     animation:sc1 2s infinite;
     opacity: 1;
   }
