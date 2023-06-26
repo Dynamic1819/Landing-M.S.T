@@ -207,7 +207,7 @@
                 </nav>
             </div>
         </div>
-        <main class="pt-16">
+        <main class="pt-14 md:pt-16">
             <div class="relative">
 
                 <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="fixed bg-primary z-50 bottom-5 right-2 inline-flex items-center p-2 mt-2 ml-3 text-sm text-white rounded-lg sm:hidden hover:bg-transparent">
@@ -216,7 +216,7 @@
                     </svg>
                 </button>
                 
-                <aside id="sidebar-multi-level-sidebar" class="fixed top-16 md:top-20 left-0 w-1/2 z-40 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
+                <aside id="sidebar-multi-level-sidebar" class="fixed top-[60px] xs:top-[63px] md:top-[73px] left-0 w-2/3 z-40 md:w-2/6 lg:w-1/5 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-white" aria-label="Sidebar">
                     <div class="h-full px-3 py-4 overflow-y-auto">
                         <div class="py-10 text-center">
                             <img src="../assets/images/M.S.T LOGO.jpg" alt="" class="w-16 rounded-full mx-auto">
@@ -281,171 +281,173 @@
                     </ul>
                     </div>
                 </aside> 
-                <div class="md:w-4/6 lg:w-4/5 p-3 lg:p-5 ml-auto overflow-y-auto bg-gray-300">
-                    <div class="md:flex items-center bg-white p-2 rounded-t-lg">
-                        <div class="float-left relative group">
-                            <label for="profile-picture" class="cursor-pointer">
-                            <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden">
-                                <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="Profile Picture" class="w-full h-full bg-gray-200 mx-auto md:mx-0">
+                <div class="md:w-4/6 lg:w-4/5 py-2 ml-auto overflow-y-auto bg-gray-300">
+                    <div class="mx-2 my-3">
+                        <div class="md:flex items-center bg-white p-2 rounded-t-lg">
+                            <div class="float-left relative group">
+                                <label for="profile-picture" class="cursor-pointer">
+                                <div class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden">
+                                    <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="Profile Picture" class="w-full h-full bg-gray-200 mx-auto md:mx-0">
+                                </div>
+                                <div class="absolute">
+                                    <p class="opacity-0 bottom-0 left-0 w-40 p-2 bg-gray-800 text-white text-sm transition-opacity duration-300 group-hover:opacity-100 rounded-md">
+                                        Click to Upload Profile
+                                    </p>
+                                </div>
+                                <input type="file" id="profile-picture" class="hidden">
                             </div>
-                            <div class="absolute">
-                                <p class="opacity-0 bottom-0 left-0 w-40 p-2 bg-gray-800 text-white text-sm transition-opacity duration-300 group-hover:opacity-100 rounded-md">
-                                    Click to Upload Profile
-                                </p>
+                            <div class="md:ml-5 lg:ml-10 w-full text-center md:text-left pt-2 md:pt-0">
+                                <h1 class="md:text-xl lg:text-3xl font-bold">User Name</h1>
+                                <span>Class</span>
                             </div>
-                            <input type="file" id="profile-picture" class="hidden">
-                        </div>
-                        <div class="md:ml-5 lg:ml-10 w-full text-center md:text-left pt-2 md:pt-0">
-                            <h1 class="md:text-xl lg:text-3xl font-bold">User Name</h1>
-                            <span>Class</span>
-                        </div>
-                        <div class="flex w-full mr-5 lg:mr-10 justify-center whitespace-nowrap space-x-5 lg:space-x-24">
-                            <div class="text-center font-semibold">
-                                <span class="block text-xl lg:text-2xl">99</span>
-                                <span class="text-xs md:text-base">Uploaded Posts</span>
-                            </div>
-                            <div class="text-center font-semibold">
-                                <span class="block text-xl lg:text-2xl">99k</span>
-                                <span class="text-xs md:text-base">Reactions</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white my-1 py-5">
-                        <div class="text-center py-3">
-                            <h1 class="text-lg lg:text-xl font-semibold">Your are now in</h1>
-                            <h2 class="text-xl lg:text-2xl font-semibold">Newbie</h2>
-                        </div>
-                        <ol class="items-center flex-wrap gap-y-4 px-2 justify-center w-full space-y-4 sm:flex sm:gap-x-10 sm:space-y-0">
-                            <li class="flex items-center text-blue-600 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-blue-600 rounded-full shrink-0">
-                                    1
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Newbie</h3>
-                                    <p class="text-sm">You are a new guy</p>
-                                </span>
-                            </li>
-                            <li class="flex items-center text-gray-500 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
-                                    2
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Rookie</h3>
-                                    <p class="text-sm">Post 5 Knowledges or Arts</p>
-                                </span>
-                            </li>
-                            <li class="flex items-center text-gray-500 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
-                                    3
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Master</h3>
-                                    <p class="text-sm">Post 15 Knowledges or Arts</p>
-                                </span>
-                            </li>
-                            <li class="flex items-center text-gray-500 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
-                                    4
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Observer</h3>
-                                    <p class="text-sm">Post 30 Knowledges or Arts</p>
-                                </span>
-                            </li>
-                            <li class="flex items-center text-gray-500 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
-                                    5
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Pro</h3>
-                                    <p class="text-sm">Post 45 Knowledges or Arts</p>
-                                </span>
-                            </li>
-                            <li class="flex items-center text-gray-500 space-x-2.5">
-                                <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
-                                    6
-                                </span>
-                                <span>
-                                    <h3 class="font-medium leading-tight">Guru</h3>
-                                    <p class="text-sm">Post 60 Knowledges or Arts</p>
-                                </span>
-                            </li>
-                        </ol>
-                    </div>
-                    <div>
-                        <!--Photo Posts -->
-                        <div class="bg-white px-2 rounded-lg mt-3">
-                            <div class="flex items-center py-2">
-                                <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="" class="w-12 md:w-14 rounded-full">
-                                <div class="ml-3 md:ml-5">
-                                    <span>User name</span>
-                                    <span class="bg-gray-700 text-gray-200 text-xs font-medium ml-2 px-2.5 py-0.5 rounded">Rank</span>
-                                    <span class="block text-sm">2 hours</span>
+                            <div class="flex w-full mr-5 lg:mr-10 justify-center whitespace-nowrap space-x-5 lg:space-x-24">
+                                <div class="text-center font-semibold">
+                                    <span class="block text-xl lg:text-2xl">99</span>
+                                    <span class="text-xs md:text-base">Uploaded Posts</span>
+                                </div>
+                                <div class="text-center font-semibold">
+                                    <span class="block text-xl lg:text-2xl">99k</span>
+                                    <span class="text-xs md:text-base">Reactions</span>
                                 </div>
                             </div>
-                            
-                            <div>
-                                <h2 class="ml-2 py-2">Art Simple: Description will be here</h2>
+                        </div>
+                        <div class="bg-white my-1 py-5">
+                            <div class="text-center py-3">
+                                <h1 class="text-lg lg:text-xl font-semibold">Your are now in</h1>
+                                <h2 class="text-xl lg:text-2xl font-semibold">Newbie</h2>
+                            </div>
+                            <ol class="items-center flex-wrap gap-y-4 px-2 justify-center w-full space-y-4 sm:flex sm:gap-x-10 sm:space-y-0">
+                                <li class="flex items-center text-blue-600 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-blue-600 rounded-full shrink-0">
+                                        1
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Newbie</h3>
+                                        <p class="text-sm">You are a new guy</p>
+                                    </span>
+                                </li>
+                                <li class="flex items-center text-gray-500 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
+                                        2
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Rookie</h3>
+                                        <p class="text-sm">Post 5 Knowledges or Arts</p>
+                                    </span>
+                                </li>
+                                <li class="flex items-center text-gray-500 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
+                                        3
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Master</h3>
+                                        <p class="text-sm">Post 15 Knowledges or Arts</p>
+                                    </span>
+                                </li>
+                                <li class="flex items-center text-gray-500 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
+                                        4
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Observer</h3>
+                                        <p class="text-sm">Post 30 Knowledges or Arts</p>
+                                    </span>
+                                </li>
+                                <li class="flex items-center text-gray-500 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
+                                        5
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Pro</h3>
+                                        <p class="text-sm">Post 45 Knowledges or Arts</p>
+                                    </span>
+                                </li>
+                                <li class="flex items-center text-gray-500 space-x-2.5">
+                                    <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-500 rounded-full shrink-0">
+                                        6
+                                    </span>
+                                    <span>
+                                        <h3 class="font-medium leading-tight">Guru</h3>
+                                        <p class="text-sm">Post 60 Knowledges or Arts</p>
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <!--Photo Posts -->
+                            <div class="bg-white px-2 rounded-lg mt-3">
+                                <div class="flex items-center py-2">
+                                    <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="" class="w-12 md:w-14 rounded-full">
+                                    <div class="ml-3 md:ml-5">
+                                        <span>User name</span>
+                                        <span class="bg-gray-700 text-gray-200 text-xs font-medium ml-2 px-2.5 py-0.5 rounded">Rank</span>
+                                        <span class="block text-sm">2 hours</span>
+                                    </div>
+                                </div>
+                                
                                 <div>
-                                    <img src="../assets/images/cambridge.JPG" alt="" class="rounded-lg">
-                                </div>
-                                <div class="flex w-full py-3 border-t-2">
-                                    <!-- Reaction -->
-                                    <button class="w-1/2 flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                                    <h2 class="ml-2 py-2">Art Simple: Description will be here</h2>
+                                    <div>
+                                        <img src="../assets/images/cambridge.JPG" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex w-full py-3 border-t-2">
+                                        <!-- Reaction -->
+                                        <button class="w-1/2 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                                                </svg>
+                                                <span class="ml-2">99.9k love it</span>
+                                        </button>
+                                        <!-- Share -->
+                                        <button class="w-1/2 flex items-center justify-center hover:bg-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
                                             </svg>
-                                            <span class="ml-2">99.9k love it</span>
-                                    </button>
-                                    <!-- Share -->
-                                    <button class="w-1/2 flex items-center justify-center hover:bg-gray-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
-                                        </svg>
-                                        <span class="ml-2">Share</span>
-                                    </button>
+                                            <span class="ml-2">Share</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Text Posts -->
-                        <div class="bg-white px-2 rounded-lg mt-3">
-                            <div class="flex items-center py-2">
-                                <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="" class="w-12 md:w-14 rounded-full">
-                                <div class="ml-3 md:ml-5">
-                                    <span>User name</span>
-                                    <span class="bg-gray-700 text-gray-200 text-xs font-medium ml-2 px-2.5 py-0.5 rounded">Rank</span>
-                                    <span class="block text-sm">2 hours</span>
+    
+                            <!-- Text Posts -->
+                            <div class="bg-white px-2 rounded-lg mt-3">
+                                <div class="flex items-center py-2">
+                                    <img src="../assets/images/istockphoto-1316420668-612x612.jpg" alt="" class="w-12 md:w-14 rounded-full">
+                                    <div class="ml-3 md:ml-5">
+                                        <span>User name</span>
+                                        <span class="bg-gray-700 text-gray-200 text-xs font-medium ml-2 px-2.5 py-0.5 rounded">Rank</span>
+                                        <span class="block text-sm">2 hours</span>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div>
-                                <h2 class="ml-2 py-2">Knowledge Simple: Description will be here</h2>
-                                <div class="shadow-lg rounded-lg border-2">
-                                    <a href="blogSingle.html" class="md:flex">
-                                        <img src="../assets/images/cambridge.JPG" alt="" class="md:rounded-l-lg md:w-56 w-full">
-                                        <div class="bg-white px-5">
-                                            <h2 class="text-xl md:text-3xl font-bold">Title of the Knowledge</h2>
-                                            <h3 class="text-sm md:text-xl">Author</h3>
-                                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima, expedita recusandae quasi accusamus dignissimos quis officia? Obcaecati nam enim ex voluptatum! Eius ipsam omnis neque dolorem, hic magni suscipit?...</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="flex w-full my-3 py-3 border-t-2">
-                                    <!-- Reaction -->
-                                    <button class="w-1/2 flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
-                                            </svg>
-                                            <span class="ml-2">99.9k love it</span>
-                                    </button>
-                                    <!-- Share -->
-                                    <button class="w-1/2 flex items-center justify-center hover:bg-gray-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
-                                          </svg>
-                                          <span class="ml-2">Share</span>
-                                    </button>
+                                
+                                <div>
+                                    <h2 class="ml-2 py-2">Knowledge Simple: Description will be here</h2>
+                                    <div class="shadow-lg rounded-lg border-2">
+                                        <a href="blogSingle.html" class="md:flex">
+                                            <img src="../assets/images/cambridge.JPG" alt="" class="md:rounded-l-lg md:w-56 w-full">
+                                            <div class="bg-white px-5">
+                                                <h2 class="text-xl md:text-3xl font-bold">Title of the Knowledge</h2>
+                                                <h3 class="text-sm md:text-xl">Author</h3>
+                                                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima, expedita recusandae quasi accusamus dignissimos quis officia? Obcaecati nam enim ex voluptatum! Eius ipsam omnis neque dolorem, hic magni suscipit?...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="flex w-full my-3 py-3 border-t-2">
+                                        <!-- Reaction -->
+                                        <button class="w-1/2 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                                                </svg>
+                                                <span class="ml-2">99.9k love it</span>
+                                        </button>
+                                        <!-- Share -->
+                                        <button class="w-1/2 flex items-center justify-center hover:bg-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                                              </svg>
+                                              <span class="ml-2">Share</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
