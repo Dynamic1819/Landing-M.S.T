@@ -81,7 +81,7 @@
     @apply absolute right-[133px] translate-y-6 px-9 bg-white -translate-x-12 cursor-pointer border-x-4 border-b-4 rounded-b-md;
 }
 .ddops2{
-    @apply absolute right-[70px] translate-y-6 px-8 bg-white cursor-pointer border-x-4 border-b-4 rounded-b-md;
+    @apply absolute right-[110px] translate-y-6 px-8 bg-white cursor-pointer border-x-4 border-b-4 rounded-b-md;
 }
 .ddops3{
     @apply absolute translate-y-6 px-9 bg-white -translate-x-14 cursor-pointer border-x-4 border-b-4 rounded-b-md;
