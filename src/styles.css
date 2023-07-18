@@ -183,11 +183,14 @@
 
 
 /* Card from Single Blog */
+.outCards{
+    @apply w-1/2 md:w-1/3 lg:w-1/4 px-2 md:px-4 py-3;
+}
 .sCard{
-    @apply md:col-span-1 my-16 md:my-0 md:p-1 mx-4 max-w-sm rounded-lg hover:bg-gradient-to-b from-blue-600/80 to-red-500 hover:shadow-xl hover:shadow-red-500 hover:scale-105 transition ease-out duration-150;
+    @apply mx-auto rounded-lg hover:bg-gradient-to-b from-blue-600 to-red-500 hover:shadow-xl hover:shadow-red-500 hover:scale-105 transition ease-out duration-150;
 }
 .sCardBody{
-    @apply max-w-sm rounded-xl shadow-md border-4 hover:border-0;
+    @apply rounded-xl shadow-md border-4 hover:border-0;
 }
 .sHead{
     @apply mb-2 text-[16px] lg:text-[22px] font-bold text-gray-900;
